@@ -1,0 +1,254 @@
+@charset "uft-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,li{list-style: none;}
+a{
+  text-decoration: none;
+  color: #194569;
+  display: block;
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fffdf5;
+}
+
+.warp{width: 100%;}
+
+/* ===== Header ===== */
+.header{
+  background-color: #d5e8ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 9px 5px;
+}
+.header ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.header .title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #fffdf5;
+  margin-right: 20rem;
+  text-shadow: 1px 1px 4px #194569;
+}
+.header .container {
+  max-width: 1200px; 
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about{
+  color: #1e5670;
+  font-weight: bold;
+  border-bottom: 1px solid #1e5670;
+}
+.header .nav{flex-basis: 600px;}
+.header .logo{
+  background: url('../img/logo.jpg') no-repeat center;
+  background-size: contain;
+  padding: 2%;
+}
+main{margin-top: 93px;}
+#about .container{padding: 20px 0;}
+.section .container {
+  max-width: 1200px; 
+  width: 100%; 
+  margin: 0 auto;
+}
+
+/* ===== Main ===== */
+/* ==== About ==== */
+.my-photo img{
+  width: 300px;
+  height: 350px;
+  background-color: rgba(30, 86, 112, 0.7);
+  border: 1px solid #194569;
+  border-radius: 15px 15px 15px 0;
+  padding: 5px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.card{
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+/* == Box 1 (Blue) == */
+.container .card .box1{
+  width: 330px;
+  height: 225px;
+  border: 2px dashed #194569;
+  border-radius: 15px 8px 15px 0;
+  margin-top: 10px;
+  background-color: #dbecf4;
+  padding: 15px;
+  position: absolute;
+  left: -15px;
+  top: 10px;
+}
+.container .card .box1 .sub-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+  border-bottom: 1px solid#194569;
+}
+.container .card .box1 div{
+  display: flex;
+  gap: 8px;
+  padding: 4px 0;
+  text-align: left;
+}
+.container .card .box1 ul li{
+  padding: 4px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .card .box1 ul li span{font-weight: 700;}
+
+/* == Box 2 (Pink) == */
+.container .card .box2{
+  width: 350px;
+  height: 240px;
+  border: 2px dashed #e19792;
+  border-radius: 15px 8px 15px 0;
+  margin-top: 10px;
+  background-color: rgba(249, 171, 167, 0.5);
+  padding: 15px;
+  position: absolute;
+  top: -365px;
+  left: 330px;
+}
+.container .card .box2 .sub-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+  border-bottom: 1px solid#194569;
+}
+.container .card .box2 ul li{
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .card .box2 .hr{border: 1px dashed #194569;}
+
+
+/* == Box 3 (Orange) == */
+.container .card .box3{
+  width: 350px;
+  height: 140px;
+  background-color: #ffefd7;
+  border: 2px dashed #e68472;
+  border-radius: 15px 8px 15px 0;
+  margin-top: 10px;
+  padding: 15px;
+  position: absolute;
+  top: -110px;
+  left: 330px;
+}
+.container .card .box3 .sub-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+  border-bottom: 1px solid#194569;
+}
+.container .card .box3 div{
+  display: flex;
+  gap: 8px;
+  padding: 4px 0;
+  text-align: left;
+}
+.container .card .box3 p{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* == Box 4 (Green) == */
+.container .card .box4{
+  width: 350px;
+  height: 190px;
+  background-color: #c8d8c0;
+  border: 2px dashed #3d5723;
+  border-radius: 15px 8px 15px 0;
+  margin-top: 10px;
+  padding: 15px;
+  position: absolute;
+  top: 45px;
+  left: 330px;
+}
+.container .card .box4 .sub-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+  border-bottom: 1px solid#194569;
+}
+.container .card .box4 div{
+  display: flex;
+  gap: 8px;
+  padding: 4px 0;
+  text-align: left;
+}
+.container .card .box4 p{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* == Box 5 (Blue) == */
+.container .card .box5{
+  width: 520px;
+  height: 600px;
+  background-color: #99bcdd;
+  border: 2px dashed #1e5670;
+  border-radius: 15px 8px 15px 0;
+  margin-top: 10px;
+  padding: 15px;
+  position: absolute;
+  top: -365px;
+  left: 700px;
+}
+.container .card .box5 .sub-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+  border-bottom: 1px solid#194569;
+}
+.container .card .box5 div{
+  display: flex;
+  gap: 8px;
+  padding: 4px 0;
+  text-align: left;
+}
+.container .card .box5 p{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+
+/* ===== Footer ===== */
+.name{
+  text-align: center;
+  background-color: #fffdf5;
+  color: #1e5670;
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 10px 15px;
+  margin-top: 17.4%;
+}

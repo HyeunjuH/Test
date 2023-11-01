@@ -1,0 +1,203 @@
+@charset "uft-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,li{list-style: none;}
+a{
+  text-decoration: none;
+  color: #194569;
+  display: block;
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fffdf5;
+}
+
+.warp{width: 100%;}
+
+/* ===== Header ===== */
+.header{
+  background-color: #d5e8ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 9px 5px;
+}
+.header ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.header .title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #fffdf5;
+  margin-right: 20rem;
+  text-shadow: 1px 1px 4px #194569;
+}
+.header .container {
+  max-width: 1200px; 
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio{
+  color: #1e5670;
+  font-weight: bold;
+  border-bottom: 1px solid #1e5670;
+}
+.header .nav{flex-basis: 600px;}
+.header .logo{
+  background: url('../img/logo.jpg') no-repeat center;
+  background-size: contain;
+  padding: 2%;
+}
+main{margin-top: 93px;}
+#portfolio .container{padding: 20px 0;}
+.section .container {
+  max-width: 1200px; 
+  width: 100%; 
+  margin: 0 auto;
+}
+
+/* ==== Portfolio Header Name ==== */
+.section .porfol{font-size: 30px;}
+
+/* ===== Swiper ===== */
+.swiper-outer {
+  width: 100%; 
+  position: relative;
+}
+.swiper-outer h2{
+  font-size: 25px;
+  margin-top: 30px;
+}
+.sw-about-prev, .sw-about-next {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 55%; 
+  transform: translateY(-50%); 
+  z-index: 99;
+  color: #1e5670;
+  background-color: #d5e8ff;
+  border: 1px solid #1e5670;
+  border-radius: 50%;
+}
+.sw-about-prev:hover {
+  background-color: #99bcdd;
+  color: #d5e8ff;
+  font-weight: bold;
+  width: 33px;
+  height: 33px;
+}
+.sw-about-next:hover {
+  background-color: #99bcdd;
+  color: #d5e8ff;
+  font-weight: bold;
+  width: 33px;
+  height: 33px;
+}
+.sw-about-prev {left: -50px;}
+.sw-about-next {right: -50px;}
+.swiper-slide .desc {padding: 20px;}
+
+/* === Portfolio Explanation === */
+/* = Portfolio = */
+.sub-port h3{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  color: #1e5670;
+  font-size: 20px;
+}
+/* = Portfolio Box = */
+.sub-port{
+  height: 300px;
+  margin-top: 20px;
+  border: 3px dashed #99bcdd;
+  border-radius: 10px;
+  color: #1e5670;
+  text-align: center;
+  background-color: #d5e8ff;
+  padding: 20px;
+}
+/* = Portfolio IMG Box = */
+.sub-port .img-box {
+  overflow: hidden;
+  /* width: 100%; */
+  height: 200px;
+  padding-top: 52.65%;
+  position: relative;
+  border: 1px double #99bcdd;
+  border-radius: 15px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-position: center;
+  object-fit: cover;
+}
+
+/* = Portfolio Text = */
+.sub-port p{
+  border: 1px dashed #99bcdd;
+  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: left;
+  position: relative;
+}
+
+/* === Youtube === */
+.youtube-container{
+  width: 1200px;
+  height: 500px;
+}
+#video-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  justify-content: space-between;
+}
+.youtube-container > h1{
+  margin-top: 55px;
+}
+#video-container > div{
+  height: 190px;
+  flex-basis: 24%;
+  border: 2px dashed rgba(30, 86, 112, 0.5);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(30, 86, 112, 0.5);
+}
+#video-container iframe{
+  width: 100%; 
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* ===== Footer ===== */
+.name{
+  text-align: center;
+  background-color: #fffdf5;
+  color: #1e5670;
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 10px 15px;
+  margin-top: 4.2%;
+}

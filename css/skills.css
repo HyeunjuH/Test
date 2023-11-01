@@ -1,0 +1,153 @@
+@charset "uft-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,li{list-style: none;}
+a{
+  text-decoration: none;
+  color: #194569;
+  display: block;
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #d5e8ff;
+}
+
+.warp{width: 100%;}
+
+/* ===== Header ===== */
+.header{
+  background-color: #d5e8ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 9px 5px;
+}
+.header ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.header .title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #fffdf5;
+  margin-right: 20rem;
+  text-shadow: 1px 1px 4px #194569;
+}
+.header .container {
+  max-width: 1200px; 
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills{
+  color: #1e5670;
+  font-weight: bold;
+  border-bottom: 1px solid #1e5670;
+}
+.header .nav{flex-basis: 600px;}
+.header .logo{
+  background: url('../img/logo.jpg') no-repeat center;
+  background-size: contain;
+  padding: 2%;
+}
+main{margin-top: 93px;}
+#skills .container{padding: 20px 0;}
+.section .container {
+  max-width: 1200px; 
+  width: 100%; 
+  margin: 0 auto;
+}
+
+/* ==== Skills Header Name ==== */
+.section .skill{font-size: 30px;}
+/* ===== Skills ===== */
+.container .program{
+  margin-top: 80px;
+  font-size: 20px;
+  display: inline-block;
+}
+.container .program .text{
+  font-size: 15px;
+  color: #5f84a2;
+  margin-top: 1px;
+  margin-bottom: 18px;
+}
+/* ==== Skills Programs ==== */
+/* == Progress Bar == */
+.program .programs-name{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 640px;
+}
+.program .programs-name .pr-txt-box{
+  margin: 15px 10px;
+  text-align: left;
+  width: 190px;
+  border: 1px dashed #5f84a2;
+  border-radius: 15px 15px 15px 0;
+  padding: 15px 15px;
+}
+.programs-name > h2{
+  font-size: 20px;
+  left: 50% !important;
+  top: 25% !important;
+  white-space: nowrap;
+}
+.text1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+/* ==== Skills Using List ==== */
+.list-container{
+  position: absolute;
+  right: 450px;
+  top: 350px;
+}
+.list > h2{font-size: 25px;}
+.list .list-title{
+  font-size: 20px;
+  font-weight: bold;
+  list-style: circle;
+  text-align: left;
+  margin-left: 35px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+.list .list-title:hover{
+  width: 230px;
+  height: 29px;
+  border-bottom: 1px solid#194569;
+}
+.list .sub-list{
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: circle;
+  text-align: left;
+  margin-left: 45px;
+  font-weight: 300;
+}
+
+/* ===== Footer ===== */
+.name{
+  text-align: center;
+  background-color: #fffdf5;
+  color: #1e5670;
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 10px 15px;
+  margin-top: 4.2%;
+}
